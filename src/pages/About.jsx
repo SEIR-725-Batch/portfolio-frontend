@@ -36,7 +36,9 @@ function About(props) {
                     <h3>{about.email}</h3>
                     <p>{about.bio}</p>
                 </div>
-                
+                <div className="links">
+                    <a href="https://www.linkedin.com/in/ian-mcbee/">Linkedin</a>
+                </div>
             </div>
         
         </div>
