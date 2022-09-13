@@ -26,9 +26,19 @@ function About(props) {
   const loaded = () => {
     return (
         <div>
-        <h2>{about.name}</h2>
-        <h3>{about.email}</h3>
-        <p>{about.bio}</p>
+            <div className="aboutme-container">
+                <div className="image-container">
+                    <img src={about.headshot} alt="" />
+                </div>
+                
+                <div className="details">
+                    <h2>{about.name}</h2>
+                    <h3>{about.email}</h3>
+                    <p>{about.bio}</p>
+                </div>
+                
+            </div>
+        
         </div>
         )
     };

@@ -24,20 +24,20 @@ function Projects(props) {
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return projects.map((project, idx) => (
-      <div>
-        <h1>{project.name}</h1>
-        <img src={project.image} />
-        <a href={project.git}>
-          <button>Github</button>
-        </a>
-        <a href={project.live}>
-          <button>live site</button>
-        </a>
+      <div className="project-container">
+            <h1>{project.name}</h1>
+            <img src={project.image} />
+            <a href={project.git}>
+            <button>Github</button>
+            </a>
+            <a href={project.live}>
+            <button>live site</button>
+            </a>
       </div>
     ));
   };
 
-  return projects ? loaded() : <h1>Loading...</h1>;
+  return projects ? <div className="main-container">{loaded()}</div> : <h1>Loading...</h1>;
 }
 
 export default Projects;
